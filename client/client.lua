@@ -1,8 +1,8 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 
 -- valentine --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('valentine-storage-1', vector3(-179.3819, 648.2138, 113.58127), QRCore.Shared.Keybinds['J'], 'Open Valentine Storage', {
+	exports['rsg-core']:createPrompt('valentine-storage-1', vector3(-179.3819, 648.2138, 113.58127), RSGCore.Shared.Keybinds['J'], 'Open Valentine Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:valstorage',
 		args = { false, true, false },
@@ -14,7 +14,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:valstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'valstore'..cid, {
         maxweight = Config.ValentineMaxWeight,
@@ -26,7 +26,7 @@ end)
 
 -- blackwater --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('blackwater-storage-1', vector3(-733.6947, -1253.501, 44.734077), QRCore.Shared.Keybinds['J'], 'Open Blackwater Storage', {
+	exports['rsg-core']:createPrompt('blackwater-storage-1', vector3(-733.6947, -1253.501, 44.734077), RSGCore.Shared.Keybinds['J'], 'Open Blackwater Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:blkstorage',
 		args = { false, true, false },
@@ -38,7 +38,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:blkstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'blkstore'..cid, {
         maxweight = Config.BlackwaterMaxWeight,
@@ -50,7 +50,7 @@ end)
 
 -- stdenis --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('stdenis-storage-1', vector3(2669.6577, -1500.203, 45.968963), QRCore.Shared.Keybinds['J'], 'Open StDenis Storage', {
+	exports['rsg-core']:createPrompt('stdenis-storage-1', vector3(2669.6577, -1500.203, 45.968963), RSGCore.Shared.Keybinds['J'], 'Open StDenis Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:denstorage',
 		args = { false, true, false },
@@ -62,7 +62,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:denstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'denstore'..cid, {
         maxweight = Config.StdenisMaxWeight,
@@ -74,7 +74,7 @@ end)
 
 -- rhodes --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('rhodes-storage-1', vector3(1231.0391, -1277.829, 76.021591), QRCore.Shared.Keybinds['J'], 'Open Rhodes Storage', {
+	exports['rsg-core']:createPrompt('rhodes-storage-1', vector3(1231.0391, -1277.829, 76.021591), RSGCore.Shared.Keybinds['J'], 'Open Rhodes Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:rhostorage',
 		args = { false, true, false },
@@ -86,7 +86,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:rhostorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'rhostore'..cid, {
         maxweight = Config.RhodesMaxWeight,
@@ -98,7 +98,7 @@ end)
 
 -- annesburg --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('annesburg-storage-1', vector3(2934.8232, 1306.6634, 44.47974), QRCore.Shared.Keybinds['J'], 'Open Annesburg Storage', {
+	exports['rsg-core']:createPrompt('annesburg-storage-1', vector3(2934.8232, 1306.6634, 44.47974), RSGCore.Shared.Keybinds['J'], 'Open Annesburg Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:annstorage',
 		args = { false, true, false },
@@ -110,7 +110,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:annstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'annstore'..cid, {
         maxweight = Config.AnnesburgMaxWeight,
@@ -122,7 +122,7 @@ end)
 
 -- strawberry --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('strawberry-storage-1', vector3(-1752.021, -386.3956, 156.49397), QRCore.Shared.Keybinds['J'], 'Open Strawberry Storage', {
+	exports['rsg-core']:createPrompt('strawberry-storage-1', vector3(-1752.021, -386.3956, 156.49397), RSGCore.Shared.Keybinds['J'], 'Open Strawberry Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:strstorage',
 		args = { false, true, false },
@@ -134,7 +134,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:strstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'strstore'..cid, {
         maxweight = Config.StrawberryMaxWeight,
@@ -146,7 +146,7 @@ end)
 
 -- tumbleweed --
 Citizen.CreateThread(function()
-	exports['qr-core']:createPrompt('tumbleweed-storage-1', vector3(-5494.741, -2959.111, -0.69497), QRCore.Shared.Keybinds['J'], 'Open Tumbleweed Storage', {
+	exports['rsg-core']:createPrompt('tumbleweed-storage-1', vector3(-5494.741, -2959.111, -0.69497), RSGCore.Shared.Keybinds['J'], 'Open Tumbleweed Storage', {
 		type = 'client',
 		event = 'rsg-storage:client:tumstorage',
 		args = { false, true, false },
@@ -158,7 +158,7 @@ Citizen.CreateThread(function()
 end)
 
 RegisterNetEvent('rsg-storage:client:tumstorage', function()
-	QRCore.Functions.GetPlayerData(function(PlayerData)
+	RSGCore.Functions.GetPlayerData(function(PlayerData)
 	local cid = PlayerData.citizenid
     TriggerServerEvent("inventory:server:OpenInventory", "stash", 'tumstore'..cid, {
         maxweight = Config.TumbleweedMaxWeight,
