@@ -6,8 +6,8 @@ author 'RexShack#3041'
 description 'rsg-storage'
 
 client_script {
-	'client/client.lua',
-	'config.lua'
+    'client/client.lua',
+    'config.lua'
 }
 
 dependency 'rsg-core'
