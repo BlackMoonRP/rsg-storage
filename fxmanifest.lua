@@ -4,10 +4,18 @@ game 'rdr3'
 
 author 'RexShack#3041'
 description 'rsg-storage'
+version '1.0.0'
+
+shared_scripts {
+    'config.lua',
+}
 
 client_script {
-    'client/client.lua',
-    'config.lua'
+    'client/client.lua'
+}
+
+server_script {
+    'server/server.lua'
 }
 
 dependency 'rsg-core'
